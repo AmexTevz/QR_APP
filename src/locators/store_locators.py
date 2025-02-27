@@ -29,14 +29,6 @@ class AppetizerItems:
     SOUTHWESTERN_EGGROLLS = (By.XPATH, "//h3[contains(.,'Southwestern Eggrolls™')]")
     TRIPLE_DIPPER = (By.XPATH, "//h3[contains(.,'Triple Dipper™')]")
 
-class PriceLocators:
-    ITEM_PRICE_BY_NAME = (By.XPATH, "//h3[contains(text(),'{}')]/..//p[contains(@class,'palette-neutral100-color typography-text-p2')]")
-    ITEM_CONTAINER = (By.XPATH, "//div[contains(@class,'menu-item')]")
-    ITEM_NAME = (By.XPATH, ".//h3")
-    ITEM_PRICE = (By.XPATH, ".//p[contains(@class,'palette-neutral100-color typography-text-p2')]")
-    CATEGORY_CONTAINER = (By.XPATH, "//div[contains(@class,'category-section')]")
-    INDIVIDUAL_PRICE = (By.CSS_SELECTOR, "p#itemPrice")
-
     
 class CustomizationLocators:
     DIPPING_SAUCE_DROPDOWN = (By.XPATH, "//div[contains(text(),'Choose Dipping Sauce')]")
@@ -86,6 +78,7 @@ class ModifierLocators:
     TIP_18 = (By.CSS_SELECTOR, "button[id='18TipTrigger']")
     CUSTOM_TIP = (By.CSS_SELECTOR, "button#customTipTrigger")
     CUSTOM_TIP_INPUT = (By.CSS_SELECTOR, "input#Tip")
+    EXPAND_BUTTON = (By.CSS_SELECTOR, "p.show-toggle-cart")
 
 class PaymentPageLocators:
     NAME_ON_CARD = (By.CSS_SELECTOR, "input#inputNameOnCard")
@@ -99,7 +92,5 @@ class PaymentPageLocators:
     PROCESSING_MESSAGE = (By.XPATH, "//div[contains(text(), 'Processing')]")
 
 
-
-
-
-
+class PriceLocators:
+    pass

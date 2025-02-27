@@ -36,6 +36,10 @@ class CartPage(BasePage):
     def go_to_cart(self):
         time.sleep(0.5)
         self.click(ModifierLocators.CART_BUTTON)
+        self.click(ModifierLocators.EXPAND_BUTTON)
+
+    # def expand_cart_items(self):
+    #     self.click(ModifierLocators.EXPAND_BUTTON)
 
     def add_charity(self):
         self.click(ModifierLocators.CHARITY_BUTTON)
