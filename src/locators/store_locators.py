@@ -29,6 +29,13 @@ class AppetizerItems:
     SOUTHWESTERN_EGGROLLS = (By.XPATH, "//h3[contains(.,'Southwestern Eggrolls™')]")
     TRIPLE_DIPPER = (By.XPATH, "//h3[contains(.,'Triple Dipper™')]")
 
+class PriceLocators:
+    ITEM_PRICE_BY_NAME = (By.XPATH, "//h3[contains(text(),'{}')]/..//p[contains(@class,'palette-neutral100-color typography-text-p2')]")
+    ITEM_CONTAINER = (By.XPATH, "//div[contains(@class,'menu-item')]")
+    ITEM_NAME = (By.XPATH, ".//h3")
+    ITEM_PRICE = (By.XPATH, ".//p[contains(@class,'palette-neutral100-color typography-text-p2')]")
+    CATEGORY_CONTAINER = (By.XPATH, "//div[contains(@class,'category-section')]")
+    INDIVIDUAL_PRICE = (By.CSS_SELECTOR, "p#itemPrice")
     
 class CustomizationLocators:
     DIPPING_SAUCE_DROPDOWN = (By.XPATH, "//div[contains(text(),'Choose Dipping Sauce')]")
@@ -92,5 +99,19 @@ class PaymentPageLocators:
     PROCESSING_MESSAGE = (By.XPATH, "//div[contains(text(), 'Processing')]")
 
 
-class PriceLocators:
-    pass
+class CalculationLocators:
+    MAIN_ITEMS = (By.CSS_SELECTOR, "li.table-row")
+    ITEM_NAME_1 =(By.CSS_SELECTOR, "h3.cart-title")
+    ITEM_NAME_2 = (By.CSS_SELECTOR, "h3.typography-text-p3.cart-title")
+    ITEM_PRICE_1 = (By.CSS_SELECTOR, "div.table-col-cart-4 p")
+    ITEM_PRICE_2 = (By.CSS_SELECTOR, "div.table-col-cart-4.item-price")
+    NEXT_ITEM = (By.XPATH, "following-sibling::li[1]")
+    MODIFIER_NAME = (By.CSS_SELECTOR, "div.table-col-cart-10")
+    MODIFIER_PRICE_1 = (By.CSS_SELECTOR, "p.price.modifier-price")
+    MODIFIER_PRICE_2 = (By.CSS_SELECTOR, "div.table-col-cart-4")
+    SUBTOTAL = (By.CSS_SELECTOR, ".table-row:first-of-type .price span")
+    TAX = (By.CSS_SELECTOR, ".table-row:nth-of-type(2) .price span")
+    AUTO_SERVICE_CHARGE = (By.CSS_SELECTOR, ".table-row:nth-of-type(4) .price span")
+    TIP = (By.CSS_SELECTOR, "span#lblTip")
+    DONATION = (By.CSS_SELECTOR, "span#lblDonation")
+    TOTAL = (By.CSS_SELECTOR, "span#lblTotal")

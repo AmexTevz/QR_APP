@@ -33,7 +33,7 @@ def test_random_item_checkout(driver, store_id):
     cart_page.click_pay_now_button()
     order = payment_page.place_the_order()
     assert "Thanks" in order
-    time.sleep(10)
+    time.sleep(5)
 
 
 

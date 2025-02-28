@@ -271,3 +271,6 @@ class BasePage:
         except Exception as e:
             self.take_screenshot(self.store_id or "unknown", f"element_not_found_{name if name else ''}")
             raise
+
+    def find_elements(self, locator):
+        return self.driver.find_elements(*locator)

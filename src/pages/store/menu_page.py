@@ -7,7 +7,7 @@ from src.locators.store_locators import (
 from src.utils.navigation import Navigation
 import random
 
-PRICE_CHECK_VALUE = "9.69"
+PRICE_CHECK_VALUE = "86.86"
 
 class MenuPage(BasePage):
     def navigate_to_store(self, store_id):
